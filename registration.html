@@ -1,0 +1,73 @@
+
+<html>
+    <head>
+        <title>application</title>
+        <style>
+            body{
+                background-color: red;
+                text-align: center;
+                background-image: url("img2.jpg");
+                background-size: 100%;
+                color: black;
+            }
+                @media screen and (min-width:360px) {
+                    body{
+                        background-image:url("img2.jpg");
+                        
+                    }
+                    
+                }
+                @media screen  and (min-width:360px) and (max-width:1000px){
+                    body{
+                        background-image: url("images2.jpg");
+                       
+                    }
+                    
+                }
+            h1{
+                text-shadow: 10px 10px 10px rgb(66, 5, 220);
+            }
+            .input{
+                top: -10px;
+                position: absolute;
+                color: green;
+                top: 10px;
+                left:8px;
+                font-size: 12px;
+                padding:0 3px;
+                transition: 0.3s;
+                pointer-events: none;
+            }
+        </style>
+    </head>
+    <body>
+       <h1> WELCOME TO SWIGGY</h1><br>
+        <form action="reg.html"> 
+        <input type="text" name="myname" placeholder="User Name" ><br><br>
+        <input type="password" name="pass" placeholder="Password"><br><br>
+        <input type="password" name="pass" placeholder="Confirm Password"><br><br>
+        <input type="email" name="myname" placeholder="Email"><br><br>
+        <input type="tel" name="number" placeholder=" mobile no"><br><br>
+      
+        <select name="my language">
+            <option value="English">English</option>
+            <option value="telugu">telugu</option>
+            <option value="hindi">hindi</option>
+        </select><br><br>
+        
+        Gender:<input type="radio" name="gender" value="M">Male
+        <input type="radio" name="gender" value="F">Female
+        <input type="radio" name="gender" value="T">Transgender<br><br>
+        date of birth:
+        <input type="date" name="bday"><br><br>
+      date of joining:
+      <input type="month" name="doj"><br><br>
+        
+        <input type="checkbox" name="agree">I agree the terms and conditions<br><br>
+        <input type="Submit"><br>
+        </form>
+        
+        
+
+    </body>
+</html>

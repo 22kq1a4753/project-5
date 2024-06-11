@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>UI Pages</title>
+        <style>
+            body{
+                background-color: yellow;
+                background-image: url("img.jpg");
+                background-size: 50%;
+                text-align:center;
+                font-size:xx-large;
+                line-height: 30%;
+                margin-top: 50px;
+                
+            }
+            h3{
+                color: blue;
+            }
+            input{
+                padding:10px;
+                
+            }
+        </style>
+         <script>
+            function loginValidation() {
+                var uname=document.myform.username.value;
+                var password=document.myform.password.value;
+                if(uname== null || uname=="") {
+                   alert("Name cannot be blank")
+                   return false;
+       
+                }
+                if(password.length<6) {
+                   alert("Password must be 6 Letters")
+                   // return false;
+                   return false;
+                }
+                return true;
+            }
+            </script>
+    </head>
+    <body>
+        <form name="myform" action="loginsuccess.html" onsubmit="return loginValidation(this)">
+            <h3>LOGIN</h3>
+            <input type="text" name="username" autofocus placeholder="User Name" ><br><br>
+            <input type="password" name="password" placeholder="Password" ><br><br>
+            <input type="submit"><br>
+            <a href="email.html">forgot password?</a>
+        </form>
+    </body>
+    </html>
